@@ -12,7 +12,7 @@ $(document).ready(function (){
     }
     $(sel[i]).on("keyup", function() {
     var value = $(this).val().toLowerCase();
-    $("#myDIV *").filter(function() {
+    $(SelectItems.children()).filter(function() {
       $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
     });
   });
