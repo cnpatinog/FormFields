@@ -1,0 +1,202 @@
+/* Delete this, this is just for test purpose  */
+*{
+  outline: none;
+  border: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.econtainer{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: blue;
+  box-sizing: border-box;
+}
+.innerContainer{
+  width: 80vw;
+  height: 80vh;
+  background: white;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* --------------------------------------------------------
+-----------------------------------------------------------
+----------------------------------------------------------*/
+
+/* ------- FORM STYLE ------- */
+.iconFormGroup{
+  box-sizing: border-box;
+  margin-right: 5px;
+  width: 100%;
+  display: flex;
+  flex-wrap:wrap;
+}
+/* ------- Normal Fild Style ----------*/
+.centerfield{
+  justify-content: center;
+  text-align: center;
+}
+.rightfield{
+  justify-content: flex-end;
+  text-align: right;
+}
+.iconFieldLabel{
+  width: 100%;
+  margin-bottom: 3px;
+  padding-left: 2px;
+}
+.iconInputField {
+  border: 1px solid #ced4da;
+  border: 1px solid blue;
+  width: 100%;
+  border-radius: .3rem;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  background-color: #FFF;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.iconInputField:focus-within {
+  border-color: blue;
+  color: #495057;
+}
+.inputIcon {
+  height: 100%;
+  font-size: 1rem;
+  padding: .375rem 0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border-radius: .3rem;
+  color: #6d7378;
+  margin: 0;
+  padding: 0.5rem 0.6rem;
+}
+.inputField {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  background-color: transparent;
+  margin-right: 5px;
+  color: #495057;
+}
+.formControl {
+  width: 100%;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: transparent;
+  border-radius: .25rem;
+  border: none;
+}
+.formControl:focus {
+  color: #495057;
+  background-color: transparent;
+  border-style: none;
+  outline: 0;
+  box-shadow: 0 0 0 0;
+}
+.invalid {
+  color: red;
+}
+.iconInputField.invalid {
+  border-color: var(--error-color);
+}
+.invalidFeedback {
+  width: 100%;
+  display: none;
+  font-size: 0.8rem;
+  padding-left: 1rem;
+}
+.invalidFeedback.invalid {
+  display: block;
+}
+.invalidFeedback>ul{
+  list-style: none;
+  color: var(--error-color);
+}
+.iconInputField.s75{
+  width: 75%
+}
+.iconInputField.s50{
+  width: 50%
+}
+.iconInputField.s25{
+  width: 50%
+}
+/* ------ Select Field Style ----*/
+.selectField{
+  flex-grow: 15;
+}
+.selectFieldArrow{
+  flex-grow: 1;
+  text-align: right;
+  margin-right: 5px;
+}
+.selectInputBox{
+  width: 88%;
+  height: 300px;
+  position: relative;
+  margin-left: 12%;
+  z-index: 0;
+  border-radius: .5rem;
+  font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #FFF;
+  top: 10px;
+  box-shadow: 2px 3.6px 25px rgba(0, 0, 0, 0.12);
+  border: 0.5px solid rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  align-items: center;
+}
+.searchSelectBox{
+  width:100%;
+  border-radius: .5rem .5rem 0rem 0rem;
+}
+.searchSelectBox>.iconInputField{
+  border-radius: .5rem .5rem 0rem 0rem;
+  border: 0px;
+  border-bottom: solid 0.1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.12);
+  padding: 5px 2px;
+}
+.SelectOption{
+  display: flex;
+  align-items: center;
+  width:100%;
+  height: 2em;
+  padding: 2px 10px;
+}
+.SelectOption:hover{
+  background: blue;
+  color: white;
+}
+.SelectItems{
+  width: 100%;
+  height: calc(100% - 2rem - 15px);
+  align-self: stretch;
+  overflow-y: auto;
+  border-radius: 0rem 0rem .5rem .5rem;
+  margin: 2.5px 0px;
+}
+.SelectItems::-webkit-scrollbar {
+width: 9px;
+background-color: #F5F5F5;}
+
+.SelectItems::-webkit-scrollbar-thumb {
+border-radius: 10px;
+-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+background-color: blue; }
+
+.SelectItems {
+scrollbar-color: blue #F5F5F5;
+margin: 10px;
+}
